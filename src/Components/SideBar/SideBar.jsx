@@ -5,7 +5,6 @@ import { faPlus, faUsers } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { Menu } from "../../Context/MenuContext"
 import { WindowSize } from "./../../Context/WindowContext";
-import logo from "../../assets/logo.png"
 
 import { links } from "./Links";
 
@@ -14,8 +13,6 @@ export default function SideBar() {
   const isOpen = menu.isOpen;
   const windowSize = useContext(WindowSize);
   console.log(windowSize.windowSize);
-
-
 
   return (
     <div>
@@ -42,21 +39,17 @@ export default function SideBar() {
           right: windowSize.windowSize < "768" ? (isOpen ? "0" : "-220px") : "0",
           width: isOpen ? "220px" : "fit-content",
           position: windowSize.windowSize < "768" ? "fixed" : "sticky",
+          marginTop: windowSize.windowSize < "768" ? " " : "70px"
         }}
       >
-        <Link to={"/"}>
-          <img src={logo} alt="logo"
 
-            width={
-              !isOpen ? "70px" : "218px"} height={"83px"} />
-        </Link>
         <div className="mt-4">
           {links.map((link, key) => {
             return (
               <NavLink
                 key={key}
                 to={link.path}
-                className={"flex pr-5 py-2 items-center gap-2 my-2 hover:bg-[#E5ECF6] transition"}
+                className={"flex pr-5 py-2 items-center gap-2 my-2 hover:bg-[#E5ECF6] transition rounded"}
               >
                 <img
                   style={{
