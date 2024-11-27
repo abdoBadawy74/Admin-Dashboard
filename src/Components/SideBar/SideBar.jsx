@@ -2,9 +2,10 @@ import React, { useContext, useState, useEffect } from "react";
 import "./Bars.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faUsers } from "@fortawesome/free-solid-svg-icons";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import { Menu } from "../../Context/MenuContext"
 import { WindowSize } from "./../../Context/WindowContext";
+import logo from "../../assets/logo.png"
 
 import { links } from "./Links";
 
@@ -43,25 +44,34 @@ export default function SideBar() {
           position: windowSize.windowSize < "768" ? "fixed" : "sticky",
         }}
       >
-        {links.map((link,key) => {
-          return (
-            <NavLink
-              key={key}
-              to={link.path}
-              className={"flex bg-red-500"}
-            >
-              <FontAwesomeIcon
-                style={{
-                  padding: isOpen ? "10px 8 10px 15px" : "10px 8px",
-                }}
-                icon={link.icon}
-              />
-              <p className="" style={{ display: isOpen ? "block" : "none" }}>
-                {link.name}
-              </p>
-            </NavLink>
-          );
-        })}
+        <Link to={"/"}>
+          <img src={logo} alt="logo"
+
+            width={
+              !isOpen ? "70px" : "218px"} height={"83px"} />
+        </Link>
+        <div className="mt-4">
+          {links.map((link, key) => {
+            return (
+              <NavLink
+                key={key}
+                to={link.path}
+                className={"flex pr-5 py-2 items-center gap-2 my-2 hover:bg-[#E5ECF6] transition"}
+              >
+                <img
+                  style={{
+                    padding: isOpen ? "10px 8 10px 15px" : "10px 8px",
+                  }}
+                  src={link.icon}
+                  alt="icon"
+                />
+                <p className="" style={{ display: isOpen ? "block" : "none" }}>
+                  {link.name}
+                </p>
+              </NavLink>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
