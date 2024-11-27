@@ -11,7 +11,6 @@
   }
   
   .side-bar {
-    background-color: #bbb;
     height: 100vh;
     position: sticky;
     top: 70px;
@@ -21,6 +20,7 @@
     overflow-x: hidden;
     padding-top: 20px;
     transition: 0.5s all !important;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1)
   }
   
   .side-bar-link {
@@ -31,11 +31,7 @@
     border-radius: 8px;
   }
   .side-bar .active {
-    background-color: #f2f3fe;
-    color:#038edc;
-  }
-  .side-bar .active:hover {
-    background-color: #f2f3fe;
+    background-color: #E5ECF6;
     color:#038edc;
   }
   .side-bar-link:hover {

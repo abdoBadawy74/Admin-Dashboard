@@ -1,40 +1,40 @@
-import {
-    faCartShopping,
-    faMarker,
-    faPlus,
-    faTruckFast,
-    faUsers,
-  } from "@fortawesome/free-solid-svg-icons";
-  
-  export const links = [
-    {
-      name: "Users",
-      path: "users",
-      icon: faUsers,
-    },
-    {
-      name: "Add User",
-      path: "/dashboard/users/add",
-      icon: faPlus,
-    },
-    {
-      name: "Categories",
-      path: "/dashboard/categories",
-      icon: faCartShopping,
-    },
-    {
-      name: "Add Category",
-      path: "/dashboard/category/add",
-      icon: faPlus,
-    },
-    {
-      name: "Products",
-      path: "/dashboard/products",
-      icon: faTruckFast,
-    },
-    {
-      name: "Add Product",
-      path: "/dashboard/Product/add",
-      icon: faPlus,
-    },
-  ];
+import users from "../../assets/svgs/users.svg"
+import consultant from "../../assets/svgs/consultant.svg"
+import consultation from "../../assets/svgs/consultations.svg"
+import payment from "../../assets/svgs/payments.svg"
+import reports from "../../assets/svgs/reports.svg"
+import call from "../../assets/svgs/callCenter.svg"
+
+
+export const links = [
+  {
+    name: "المتسخدمين",
+    path: "users",
+    icon: users,
+  },
+  {
+    name: "المستشارين",
+    path: "/dashboard/users/add",
+    icon: consultant,
+  },
+  {
+    name: "الاستشارات",
+    path: "/dashboard/categories",
+    icon: consultation,
+  },
+  {
+    name: "المدفوعات",
+    path: "/dashboard/category/add",
+    icon: payment,
+  },
+  {
+    name: "التقارير",
+    path: "/dashboard/products",
+    icon: reports,
+  },
+  {
+    name: "خدمة العملاء ",
+    path: "/dashboard/Product/add",
+    icon: call,
+  },
+];
