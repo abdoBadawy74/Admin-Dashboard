@@ -14,12 +14,12 @@ export const links = [
   },
   {
     name: "المستشارين",
-    path: "/dashboard/users/add",
+    path: "/consultants",
     icon: consultant,
   },
   {
     name: "الاستشارات",
-    path: "/dashboard/categories",
+    path: "",
     icon: consultation,
   },
   {
