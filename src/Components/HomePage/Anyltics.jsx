@@ -3,9 +3,9 @@ import DownArrow from "../../assets/svgs/ArrowDown.svg"
 
 export default function Anyltics() {
   return (
-    <div className='w-[100%] d-flex '>
-    <div className='w-[80%] pt-5 pr-3'>
-        <div className="flex gap-4">
+    <div className='md:w-[100%] d-flex pt-5 pr-3'>
+
+        <div className="flex gap-4 flex-wrap md:justify-start justify-center ">
             <div className="bg-[#D8FDEF] p-4 rounded-xl">
                 <h4 className="text-[#1C1C1C] font-medium text[18px]" >مستخدمين اونلاين </h4>
                 <div className="flex flex-row-reverse items-center gap-4 ">
@@ -65,6 +65,6 @@ export default function Anyltics() {
             
         </div>
     </div>
-</div>
+
   )
 }

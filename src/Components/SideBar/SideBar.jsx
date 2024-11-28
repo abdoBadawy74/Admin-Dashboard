@@ -23,6 +23,7 @@ export default function SideBar() {
           right: "0",
           width: "100%",
           height: "100vh",
+          zIndex: "1",
           backgroundColor: "rgba(0,0,0,0.5)",
           display:
             windowSize.windowSize < "768"
