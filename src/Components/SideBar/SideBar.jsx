@@ -39,7 +39,6 @@ export default function SideBar() {
           right: windowSize.windowSize < "768" ? (isOpen ? "0" : "-220px") : "0",
           width: isOpen ? "220px" : "fit-content",
           position: windowSize.windowSize < "768" ? "fixed" : "sticky",
-          marginTop: windowSize.windowSize < "768" ? " " : "70px"
         }}
       >
 
@@ -49,7 +48,7 @@ export default function SideBar() {
               <NavLink
                 key={key}
                 to={link.path}
-                className={"flex pr-5 py-2 items-center gap-2 my-2 hover:bg-[#E5ECF6] transition rounded"}
+                className={"flex px-2 py-2 items-center gap-2 my-2 hover:bg-[#E5ECF6] transition rounded"}
               >
                 <img
                   style={{
