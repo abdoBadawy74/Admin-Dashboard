@@ -1,0 +1,49 @@
+.table-container {
+    overflow-x: auto; 
+    width: 80%;
+    margin: 50px auto;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 15px !important;
+  }
+  
+  .table-header {
+    padding: 10px;
+    background-color: #f4f5f7;
+    color: #2e343e;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .table-row:hover {
+    background-color: #f1f5f9;
+  }
+  
+  .table-cell {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  .name-with-img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e2e8f0;
+  }
+  
+  .user-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2e343e;
+  }
+  

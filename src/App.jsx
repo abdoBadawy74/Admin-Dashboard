@@ -1,9 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css'
-import SideBar from './Components/SideBar/SideBar';
-import TopBar from './Components/SideBar/TopBar/TopBar';
 import Dashboard from './Pages/Dashboard';
 import HomePage from './Pages/HomePage';
+import Users from './Pages/Users';
 
 function App() {
 
@@ -14,6 +13,7 @@ function App() {
        <Routes>
         <Route element={<Dashboard/>}>
           <Route path="/" element={<HomePage/>}/>
+          <Route path='users' element={<Users/>} />
         </Route>
        </Routes>
         {/* <Dashboard/> */}
