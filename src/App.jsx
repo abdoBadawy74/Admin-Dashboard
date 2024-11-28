@@ -3,6 +3,7 @@ import './App.css'
 import Dashboard from './Pages/Dashboard';
 import HomePage from './Pages/HomePage';
 import Users from './Pages/Users';
+import Consultant from './Pages/Consultant';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route element={<Dashboard/>}>
           <Route path="/" element={<HomePage/>}/>
           <Route path='users' element={<Users/>} />
+          <Route path='consultants' element={<Consultant/>} />
         </Route>
        </Routes>
         {/* <Dashboard/> */}
