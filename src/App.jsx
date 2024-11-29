@@ -5,6 +5,7 @@ import HomePage from './Pages/HomePage';
 import Users from './Pages/Users';
 import Consultant from './Pages/Consultant';
 import Consultations from './Pages/Consultations';
+import Payments from './Pages/Payments';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path='users' element={<Users/>} />
           <Route path='consultants' element={<Consultant/>} />
           <Route path='consultations' element={<Consultations/>} />
+          <Route path='payments' element={<Payments/>} />
         </Route>
        </Routes>
         {/* <Dashboard/> */}
