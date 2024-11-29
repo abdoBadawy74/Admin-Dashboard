@@ -11,8 +11,9 @@ const Table = ({ headers, rows, rowKey, customStyles = {} }) => {
             {headers.map((header, index) => (
               <th
                 key={index}
-                style={{ ...headerStyle, ...header.style,backgroundColor: header.bgColor }}
+                style={{ ...headerStyle, ...header.style,backgroundColor: header.bgColor, width: header.key === "name" ? " 220px !important": "auto" }}
                 className="table-header"
+                colSpan={header.key === "name" ? 2 : 1}
               >
                 {header.label}
               </th>
@@ -29,7 +30,9 @@ const Table = ({ headers, rows, rowKey, customStyles = {} }) => {
                     ...cellStyle,
                     ...header.cellStyle,
                     textAlign: header.align || "center",
+                    columnSpan :header.key === "name" && row.img ? 2 : 1,
                   }}
+                  colSpan={header.key === "name" ? 2 : 1}
                   className="table-cell"
                 >
                   {/* Render image and name together if `img` is present */}

@@ -6,7 +6,7 @@ import person4 from "../../assets/person4.png"
 
 export default function NotifactionSide() {
     return (
-        <div className='md:w-[20%] w-[100%] md:fixed top-0 left-0 z-20  bg-white text-center md:text-start notification h-[100vh] pt-5 pr-4 border-r'>
+        <div className='md:w-[20%] w-[100%] md:fixed top-0 left-0 z-20  bg-white md:text-start notification h-[100vh] pt-5 pr-4 border-r'>
             <div>
                 <div className='flex justify-between px-4'>
                     <h4 className="font-medium">الاشعارات </h4>
