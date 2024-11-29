@@ -24,7 +24,7 @@ export const links = [
   },
   {
     name: "المدفوعات",
-    path: "/dashboard/category/add",
+    path: "/payments",
     icon: payment,
   },
   {

@@ -1,5 +1,5 @@
 import Table from "../Components/Table/Table"
- 
+
 const Users = () => {
     const headers = [
         { key: "name", label: "اسم المستخدم", align: "left", bgColor: "#A8C5DA" },
