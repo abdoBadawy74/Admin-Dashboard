@@ -1,7 +1,5 @@
-import React from "react";
 import Table from "../Components/Table/Table"
-import { text } from "@fortawesome/fontawesome-svg-core";
-
+ 
 const Users = () => {
     const headers = [
         { key: "name", label: "اسم المستخدم", align: "left", bgColor: "#A8C5DA" },
