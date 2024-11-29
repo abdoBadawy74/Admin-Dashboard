@@ -19,7 +19,7 @@ export const links = [
   },
   {
     name: "الاستشارات",
-    path: "",
+    path: "/consultations",
     icon: consultation,
   },
   {
