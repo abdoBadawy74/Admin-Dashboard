@@ -7,6 +7,7 @@ import Consultant from './Pages/Consultant';
 import Consultations from './Pages/Consultations';
 import Payments from './Pages/Payments';
 import CallCenter from './Pages/CallCenter';
+import UserProfile from './Pages/Profile/UserProfile';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route element={<Dashboard />}>
             <Route path="/" element={<HomePage />} />
             <Route path='users' element={<Users />} />
+            <Route path="users/:id" element={<UserProfile />} />
             <Route path='consultants' element={<Consultant />} />
             <Route path='consultations' element={<Consultations />} />
             <Route path='payments' element={<Payments />} />
