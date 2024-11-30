@@ -20,7 +20,8 @@
     text-align: center;
   }
   
-  .table-row:hover {
+  .table-row:hover,
+  .table-row-link:hover {
     background-color: #f1f5f9;
   }
   
