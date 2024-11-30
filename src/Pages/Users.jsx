@@ -11,6 +11,7 @@ const Users = () => {
 
     const rows = [
         {
+            id: 1,
             name: "علي أحمد",
             img: "https://www.w3schools.com/howto/img_avatar.png",
             joinDate: "1/1/2024",
@@ -19,6 +20,7 @@ const Users = () => {
             balance: "500 ر.س",
         },
         {
+            id: 2,
             name: "ملك محمد",
             img: "https://www.w3schools.com/howto/img_avatar.png",
             joinDate: "1/1/2024",
@@ -27,6 +29,7 @@ const Users = () => {
             balance: "50 ر.س",
         },
         {
+            id: 3,
             name: "ميه أبو شابة",
             img: "https://www.w3schools.com/howto/img_avatar.png",
             joinDate: "5/1/2024",
@@ -35,6 +38,7 @@ const Users = () => {
             balance: "20 ر.س",
         },
         {
+            id: 4,
             name: "زين كريم",
             img: "https://www.w3schools.com/howto/img_avatar.png",
             joinDate: "5/1/2024",
@@ -43,6 +47,7 @@ const Users = () => {
             balance: "100 ر.س",
         },
         {
+            id: 5,
             name: "محمد علي",
             img: "https://www.w3schools.com/howto/img_avatar.png",
             joinDate: "5/1/2024",
@@ -51,6 +56,7 @@ const Users = () => {
             balance: "100 ر.س",
         },
         {
+            id: 6,
             name: "علي محمد",
             img: "https://www.w3schools.com/howto/img_avatar.png",
             joinDate: "5/1/2024",
@@ -59,6 +65,7 @@ const Users = () => {
             balance: "100 ر.س",
         },
         {
+            id: 7,
             name: "محمد محمد",
             img: "https://www.w3schools.com/howto/img_avatar.png",
             joinDate: "5/1/2024",
@@ -67,6 +74,7 @@ const Users = () => {
             balance: "100 ر.س",
         },
         {
+            id: 8,
             name: "علي علي",
             img: "https://www.w3schools.com/howto/img_avatar.png",
             joinDate: "5/1/2024",
@@ -75,6 +83,7 @@ const Users = () => {
             balance: "100 ر.س",
         },
         {
+            id: 9,
             name: "محمد علي",
             img: "https://www.w3schools.com/howto/img_avatar.png",
             joinDate: "5/1/2024",
@@ -83,6 +92,7 @@ const Users = () => {
             balance: "100 ر.س",
         },
         {
+            id: 10,
             name: "علي محمد",
             img: "https://www.w3schools.com/howto/img_avatar.png",
             joinDate: "5/1/2024",
@@ -91,6 +101,7 @@ const Users = () => {
             balance: "100 ر.س",
         },
         {
+            id: 11,
             name: "محمد محمد",
             img: "https://www.w3schools.com/howto/img_avatar.png",
             joinDate: "5/1/2024",
@@ -99,6 +110,7 @@ const Users = () => {
             balance: "100 ر.س",
         },
         {
+            id: 12,
             name: "علي علي",
             img: "https://www.w3schools.com/howto/img_avatar.png",
             joinDate: "5/1/2024",
@@ -114,7 +126,7 @@ const Users = () => {
         cellStyle: { padding: "10px", textAlign: "center", fontSize: "0.9em", fontWeight: "500" },
     };
 
-    return <Table headers={headers} rows={rows} customStyles={customStyles} />;
+    return <Table headers={headers} rows={rows} customStyles={customStyles} route="users" />;
 };
 
 export default Users;
