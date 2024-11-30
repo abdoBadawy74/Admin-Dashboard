@@ -34,7 +34,7 @@ export const links = [
   },
   {
     name: "خدمة العملاء ",
-    path: "/dashboard/Product/add",
+    path: "/call-center",
     icon: call,
   },
 ];
