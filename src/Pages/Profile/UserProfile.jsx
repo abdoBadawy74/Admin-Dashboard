@@ -27,7 +27,7 @@ export default function UserProfile() {
             </div>
           </div>
           <div className="mt-12">
-            <div className="flex gap-4 flex-wrap ">
+            <div className="flex gap-4 flex-wrap md:flex-nowrap">
               <div className="basis-full md:basis-1/2">
                 <p className="text-[#344054] my-2">  الاسم الكامل </p>
                 <p className="border  p-2 rounded-lg font-medium"> محمد علي غالب </p>
@@ -39,7 +39,7 @@ export default function UserProfile() {
               </div>
             </div>
 
-            <div className="flex gap-4 flex-wrap">
+            <div className="flex gap-4 flex-wrap md:flex-nowrap">
               <div className="basis-full md:basis-1/2">
                 <p className="text-[#344054] my-2">  البريد الالكتروني </p>
                 <p className="border  p-2 rounded-lg font-medium">mohamedghalab@gmail.com </p>
