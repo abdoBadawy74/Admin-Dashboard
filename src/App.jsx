@@ -6,6 +6,7 @@ import Users from './Pages/Users';
 import Consultant from './Pages/Consultant';
 import Consultations from './Pages/Consultations';
 import Payments from './Pages/Payments';
+import CallCenter from './Pages/CallCenter';
 
 function App() {
 
@@ -13,15 +14,16 @@ function App() {
   return (
     <>
       <div className="App">
-       <Routes>
-        <Route element={<Dashboard/>}>
-          <Route path="/" element={<HomePage/>}/>
-          <Route path='users' element={<Users/>} />
-          <Route path='consultants' element={<Consultant/>} />
-          <Route path='consultations' element={<Consultations/>} />
-          <Route path='payments' element={<Payments/>} />
-        </Route>
-       </Routes>
+        <Routes>
+          <Route element={<Dashboard />}>
+            <Route path="/" element={<HomePage />} />
+            <Route path='users' element={<Users />} />
+            <Route path='consultants' element={<Consultant />} />
+            <Route path='consultations' element={<Consultations />} />
+            <Route path='payments' element={<Payments />} />
+            <Route path="call-center" element={<CallCenter />} />
+          </Route>
+        </Routes>
         {/* <Dashboard/> */}
       </div>
 
